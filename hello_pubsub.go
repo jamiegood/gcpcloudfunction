@@ -26,8 +26,8 @@ func HelloPubSub(ctx context.Context, m PubSubMessage) error {
 	if err != nil {
 		return err
 	}
-	datasetID := "jamietest"
-	tableID := "hwtechradar"
+	datasetID := "hwtechradar"
+	tableID := "mytable"
 
 	u := client.Dataset(datasetID).Table(tableID).Inserter()
 	items := []*Item{
